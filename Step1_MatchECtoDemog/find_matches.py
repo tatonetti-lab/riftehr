@@ -40,8 +40,8 @@ if not h == exp_header:
 
 ec_data = list()
 for mrn, fn, ln, phone, zipcode, rel in reader:
-    fn = fn.strip()
-    ln = ln.strip()
+    fn = fn.strip().lower()
+    ln = ln.strip().lower()
     
     first_names = [fn]
     if fn.replace('-', ' ').find(' ') != -1:
@@ -65,8 +65,8 @@ if not h == exp_header:
 pt_data = list()
 try:
     for i, (mrn, fn, ln, phone, zipcode) in enumerate(reader):
-        fn = fn.strip()
-        ln = ln.strip()
+        fn = fn.strip().lower()
+        ln = ln.strip().lower()
     
         first_names = [fn]
         if fn.replace('-', ' ').find(' ') != -1:
