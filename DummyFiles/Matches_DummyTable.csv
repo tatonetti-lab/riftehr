@@ -1,0 +1,8 @@
+patient_mrn,relationship,matched_relation_mrn,matched_path
+1234567,M,1112223,find_phone_match
+1234567,M,1112223,find_lastname_match
+2345678,F,2223334,find_firstname_match
+3456789,M,3334445,find_lastname_match
+3456789,M,3334445,find_phone_match
+3456789,M,3334445,find_firstname_match
+1112223,Child,1234567,find_firstname_match
